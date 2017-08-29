@@ -1,0 +1,44 @@
+/*
+  This file is part of LibCA.
+  Copyright (C) 2015 by Alejandro J. Mujica
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+  Any user request of this software, write to 
+
+  Alejandro Mujica
+
+  aledrums@gmail.com
+*/
+
+# ifndef TRAIT_H
+# define TRAIT_H
+
+# include <type_traits>
+
+template <typename To, typename FromHead, typename ...FromTail>
+struct AllAreConvertible
+{
+  static constexpr bool value =
+    std::is_convertible<FromHead, To>::value and
+    AllAreConvertible<To, FromTail...>::value;
+};
+
+template <typename To, typename From>
+struct AllAreConvertible<To, From>
+{
+  static constexpr bool value = std::is_convertible<From, To>::value;
+};
+
+# endif // TRAIT_H
