@@ -26,7 +26,7 @@ CONFIG += c++14
 
 QT += core widgets
 
-BASEDIR = /home/alex/Dropbox/Work/Programs/CC++
+BASEDIR = ../..
 
 INCLUDEPATH += $${BASEDIR}/Common \
                $${BASEDIR}/CellularAutomaton/LibCA

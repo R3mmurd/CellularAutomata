@@ -24,7 +24,7 @@ QT += core widgets
 QMAKE_CXX = clang++
 QMAKE_CXXFLAGS += -std=c++14
 
-BASEDIR = /home/alex/Dropbox/Work/Programs/CC++
+BASEDIR = ../..
 
 INCLUDEPATH += $${BASEDIR}/Common \
                $${BASEDIR}/CellularAutomaton/LibCA

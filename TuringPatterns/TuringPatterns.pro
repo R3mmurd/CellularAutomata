@@ -26,7 +26,7 @@ QT += core widgets
 
 CONFIG += c++14
 
-BASEDIR = /home/alex/Dropbox/Work/Programs/CC++
+BASEDIR = ../..
 
 INCLUDEPATH += $${BASEDIR}/Aleph-w \
                $${BASEDIR}/Common \

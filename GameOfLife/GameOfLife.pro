@@ -26,7 +26,7 @@ QMAKE_CXX = clang++
 
 CONFIG += c++14
 
-BASEDIR = /home/alex/Dropbox/Work/Programs/CC++
+BASEDIR = ../..
 
 INCLUDEPATH += $${BASEDIR}/Common \
                $${BASEDIR}/CellularAutomaton/LibCA
