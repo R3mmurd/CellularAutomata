@@ -1,4 +1,4 @@
-# cellular-automata
+# Cellular Automata
 
 This repository contains a beggining of a general library for cellular automata
 and the implementation of some classics automata for testing.
