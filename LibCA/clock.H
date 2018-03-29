@@ -22,6 +22,7 @@
   aledrums@gmail.com
 */
 
+# ifndef CLOCK_H
 # define CLOCK_H
 
 template <typename T>

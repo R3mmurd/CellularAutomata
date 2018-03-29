@@ -27,11 +27,11 @@ WARN = -Wall -Wextra -Wcast-align -Wno-sign-compare \
 
 FLAGS = -DDEBUG -D_GLIBCXX__PTHREADS -g -O0 -std=c++14 $(WARN)
 
-COMMON = ~/Dropbox/Work/Programs/CC++/Common
+DSG = ~/DeSIGNAR
 
-INCLUDE = -I. -I $(COMMON)
+INCLUDE = -I. -I $(DSG)/include
 
-LIBS = 	-lc -lm -lgsl -lgslcblas -lgmp -lmpfr -lasprintf -lpthread
+LIBS = 	-L $(DSG)/lib -lDesignar -lc -lm -lgsl -lgslcblas -lasprintf -lpthread
 
 all: test-slice test-clock
 
