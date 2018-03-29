@@ -38,7 +38,7 @@ public:
 
 template <typename CellT>
 class Periodic : public BoundaryCondition<CellT>,
-		 public Singleton<Periodic<CellT>>
+                 public Designar::Singleton<Periodic<CellT>>
 {
  public:
   CellT * get(Lattice<CellT> & lattice, const ArrayDim & pos,
@@ -77,7 +77,7 @@ class Periodic : public BoundaryCondition<CellT>,
 
 template <typename CellT>
 class Reflect : public BoundaryCondition<CellT>,
-		public Singleton<Reflect<CellT>>
+                public Designar::Singleton<Reflect<CellT>>
 {
  public:
   CellT * get(Lattice<CellT> & lattice, const ArrayDim & pos,

@@ -70,7 +70,7 @@ void Automaton::set_m_i(unsigned value)
 }
 void Automaton::fill_bag()
 {
-  bag.empty();
+  bag.clear();
 
   bag.insert(Cell::UP);
   bag.insert(Cell::DOWN);

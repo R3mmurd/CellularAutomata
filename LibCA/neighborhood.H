@@ -38,9 +38,9 @@ class Neighborhood
 
 template <typename CellT>
 class OneDimNeighborhood : public Neighborhood<CellT>,
-			   public Singleton<OneDimNeighborhood<CellT>>
+                           public Designar::Singleton<OneDimNeighborhood<CellT>>
 {
-  friend class Singleton<OneDimNeighborhood<CellT>>;
+  friend class Designar::Singleton<OneDimNeighborhood<CellT>>;
 public:
   vector<CellT *> get_neighbors(Lattice<CellT> & lattice,
                                 BoundaryCondition<CellT> * bcond,
@@ -56,8 +56,9 @@ public:
 };
 
 template <typename CellT>
-class VonNeumannNeighborhood : public Neighborhood<CellT>,
-			       public Singleton<VonNeumannNeighborhood<CellT>>
+class VonNeumannNeighborhood :
+        public Neighborhood<CellT>,
+        public Designar::Singleton<VonNeumannNeighborhood<CellT>>
 {
 public:
   vector<CellT *> get_neighbors(Lattice<CellT> & lattice,
@@ -85,7 +86,7 @@ public:
 
 template <typename CellT>
 class MooreNeighborhood : public Neighborhood<CellT>,
-			  public Singleton<MooreNeighborhood<CellT>>
+                          public Designar::Singleton<MooreNeighborhood<CellT>>
 {
 public:
   vector<CellT *> get_neighbors(Lattice<CellT> & lattice,

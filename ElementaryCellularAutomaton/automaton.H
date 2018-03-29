@@ -28,7 +28,7 @@
 # include <QPainter>
 # include <QList>
 
-# include <byte.H>
+# include <bitset.H>
 # include <neighborhood.H>
 
 class Automaton
@@ -39,14 +39,15 @@ class Automaton
     ON, OFF
   };
 
-  static constexpr unsigned WIDTH = 180;
-  static constexpr unsigned MAX_HEIGHT = 80;
-  static constexpr unsigned SCALE = 10;
+  static constexpr unsigned WIDTH = 260;
+  static constexpr unsigned MAX_HEIGHT = 120;
+  static constexpr unsigned SCALE = 5;
+  static constexpr unsigned DELAY = 100;
 
 private:
   using NeighborhoodType = OneDimNeighborhood<Status>;
 
-  Byte rule;
+  Designar::Byte rule;
 
   QList<Lattice<Status>> lattices;
   Fixed<Status> bcond;
@@ -56,7 +57,7 @@ public:
 
   void reset();
 
-  void set_rule(const Byte &);
+  void set_rule(const Designar::Byte &);
 
   void update();
 

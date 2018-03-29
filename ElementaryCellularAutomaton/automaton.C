@@ -68,7 +68,7 @@ void Automaton::reset()
   lattice.at({lattice.size(0) / 2 + 1}) = Status::ON;
 }
 
-void Automaton::set_rule(const Byte & value)
+void Automaton::set_rule(const Designar::Byte & value)
 {
   rule = value;
 }

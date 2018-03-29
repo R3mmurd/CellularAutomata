@@ -90,8 +90,8 @@ void EarthquakeAutomaton::update()
         {
           rel_pool.push(static_cast<Release *>(release.remove_next()));
 
-          unsigned i = rel_pool.top()->i;
-          unsigned j = rel_pool.top()->j;
+          unsigned i = rel_pool.top()->get_item().i;
+          unsigned j = rel_pool.top()->get_item().j;
 
           double p = EC / 4.0;
 
@@ -112,9 +112,9 @@ void EarthquakeAutomaton::update()
             if (lattice.at({i, j}) > EC)
               {
                 Release * r = get_release();
-                r->i = i;
-                r->j = j;
-                release.insert(r);
+                r->get_item().i = i;
+                r->get_item().j = j;
+                release.insert_next(r);
                 ++num_release;
               }
           }
@@ -130,9 +130,9 @@ void EarthquakeAutomaton::update()
         if (lattice.at({i, j}) > EC)
           {
             Release * r = get_release();
-            r->i = i;
-            r->j = j;
-            release.insert(r);
+            r->get_item().i = i;
+            r->get_item().j = j;
+            release.insert_next(r);
             ++num_release;
           }
       }

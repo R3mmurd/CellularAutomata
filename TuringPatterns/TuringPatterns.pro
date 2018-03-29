@@ -28,11 +28,10 @@ CONFIG += c++14
 
 BASEDIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/Aleph-w \
-               $${BASEDIR}/Common \
+INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
                $${BASEDIR}/CellularAutomaton/LibCA
 
-LIBS += -L /home/alex/Aleph-w -lAleph -lgsl -lgslcblas
+LIBS += -L $${BASEDIR}/DeSIGNAR/lib -lDesignar -lgsl -lgslcblas
 
 HEADERS = \
     automaton.H \

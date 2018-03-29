@@ -31,7 +31,7 @@ AutomatonPanel::AutomatonPanel(QWidget * parent)
                Automaton::MAX_HEIGHT * Automaton::SCALE);
   connect(&timer, SIGNAL(timeout()), this, SLOT(update()));
 
-  timer.setInterval(500);
+  timer.setInterval(Automaton::DELAY);
 }
 
 void AutomatonPanel::paintEvent(QPaintEvent *)
@@ -41,7 +41,7 @@ void AutomatonPanel::paintEvent(QPaintEvent *)
   automaton.draw(painter);
 }
 
-void AutomatonPanel::run(Byte rule)
+void AutomatonPanel::run(Designar::Byte rule)
 {
   automaton.set_rule(rule);
   timer.start();

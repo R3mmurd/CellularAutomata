@@ -28,7 +28,7 @@ QT += core widgets
 
 BASEDIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/Common \
+INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
                $${BASEDIR}/CellularAutomaton/LibCA
 
 HEADERS += \

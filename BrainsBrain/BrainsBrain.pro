@@ -21,12 +21,12 @@
 #  aledrums@gmail.com
 
 QMAKE_CXX = clang++
-QMAKE_CXXFLAGS += -std=c++14
 QT += core widgets
+CONFIG += c++14
 
 BASEDIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/Common \
+INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
                $${BASEDIR}/CellularAutomaton/LibCA
 
 HEADERS += \

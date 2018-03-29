@@ -25,7 +25,7 @@
 # ifndef AUTOMATON_H
 # define AUTOMATON_H
 
-# include <tpl_dynSetTree.H>
+# include <tree.H>
 
 # include <cell.H>
 # include <neighborhood.H>
@@ -37,7 +37,7 @@ class Automaton
 public:
   using Channel = Cell::ChannelVel;
 
-  using BagType = DynSetTreapRk<Channel>;
+  using BagType = Designar::TreeSet<Channel>;
 
   static constexpr unsigned L = 100;
   static constexpr unsigned SCALE = 5;

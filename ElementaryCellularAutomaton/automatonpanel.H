@@ -43,7 +43,7 @@ public:
 
   void paintEvent(QPaintEvent *);
 
-  void run(Byte);
+  void run(Designar::Byte);
 
   void stop();
 

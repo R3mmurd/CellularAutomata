@@ -25,8 +25,8 @@
 # ifndef EARTHQUAKEAUTOMATON_H
 # define EARTHQUAKEAUTOMATON_H
 
-# include <tpl_dynListStack.H>
-# include <htlist.H>
+# include <stack.H>
+# include <list.H>
 
 # include <neighborhood.H>
 
@@ -45,15 +45,17 @@ public:
   static constexpr unsigned HEIGHT = 64;
 
 private:
-  struct Release : public Slinknc
+  struct ReleaseData
   {
     unsigned i;
     unsigned j;
   };
 
+  using Release = Designar::SLNode<ReleaseData>;
+
   Release release;
 
-  DynListStack<Release *> rel_pool;
+  Designar::ListStack<Release *> rel_pool;
 
   Release * get_release();
 

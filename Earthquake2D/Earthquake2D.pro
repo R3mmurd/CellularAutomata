@@ -28,12 +28,10 @@ QT += widgets core
 
 BASEDIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/Aleph-w \
-               $${BASEDIR}/Common \
+INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
                $${BASEDIR}/CellularAutomaton/LibCA
 
-LIBS += -L /home/alex/Aleph-w \
-        -lAleph
+LIBS += -L $${BASEDIR}/DeSIGNAR/lib -lDesignar
 
 HEADERS += \
     earthquakeautomaton.H \
