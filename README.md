@@ -10,5 +10,4 @@ Common (https://github.com/R3mmurd/common) and the library Aleph-w available
 at http://sourceforge.net/projects/aleph-w/.
 
 In the examples codes you should edit the file with .pro extention in order to
-configure the routes where you have installed the Aleph-w library and the
-directory Common.
+configure the routes where you have installed the DeSIGNAR library.
