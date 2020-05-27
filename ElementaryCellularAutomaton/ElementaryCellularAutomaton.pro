@@ -24,12 +24,12 @@ QT += core widgets
 QMAKE_CXX = clang++
 CONFIG += c++14
 
-BASEDIR = ../..
+BASE_DIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
-               $${BASEDIR}/CellularAutomaton/LibCA
+INCLUDEPATH += $${BASE_DIR}/DeSiGNAR/include \
+               $${BASE_DIR}/CellularAutomaton/LibCA
 
-LIBS += -L$${BASEDIR}/DeSIGNAR/lib -lDesignar
+LIBS += -L ~/DeSiGNAR/lib -lDesignar
 
 HEADERS += \
     automaton.H \

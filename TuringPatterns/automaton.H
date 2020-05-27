@@ -25,7 +25,7 @@
 # ifndef AUTOMATON_H
 # define AUTOMATON_H
 
-# include <tree.H>
+# include <set.H>
 
 # include <cell.H>
 # include <neighborhood.H>

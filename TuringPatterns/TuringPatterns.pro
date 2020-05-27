@@ -28,10 +28,10 @@ CONFIG += c++14
 
 BASEDIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
+INCLUDEPATH += $${BASEDIR}/DeSiGNAR/include \
                $${BASEDIR}/CellularAutomaton/LibCA
 
-LIBS += -L $${BASEDIR}/DeSIGNAR/lib -lDesignar -lgsl -lgslcblas
+LIBS +=
 
 HEADERS = \
     automaton.H \

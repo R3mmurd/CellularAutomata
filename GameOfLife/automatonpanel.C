@@ -29,7 +29,7 @@ AutomatonPanel::AutomatonPanel(QWidget * parent)
 {
   setFixedSize(Automaton::WIDTH * Automaton::SCALE,
                Automaton::HEIGHT * Automaton::SCALE);
-  setWindowTitle("Game of life");
+  setWindowTitle("Conway's Game of Life");
 
   timer.setInterval(100);
 
