@@ -11,4 +11,3 @@ the evolution of the model.
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=wfMQ33UimSg
 " target="_blank"><img src="http://img.youtube.com/vi/wfMQ33UimSg/0.jpg"
 alt="Demo elementary cellular automaton" width="240" height="180" border="10" /></a>
-
