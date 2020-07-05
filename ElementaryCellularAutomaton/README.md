@@ -6,6 +6,12 @@ There is a GUI where you can set the value for the rule and execute it.
 Despite this is a one-dimensional automaton, it is drawn in two dimensions to show
 the evolution of the model.
 
+## Requirements
+
+- C++ v14 or higher.
+- [DeSiGNAR](https://github.com/R3mmurd/DeSiGNAR) library.
+- Qt5
+
 ## Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=wfMQ33UimSg
