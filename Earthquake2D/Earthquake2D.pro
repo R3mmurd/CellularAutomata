@@ -28,10 +28,10 @@ QT += widgets core
 
 BASEDIR = ../..
 
-INCLUDEPATH += $${BASEDIR}/DeSIGNAR/include \
+INCLUDEPATH += $${BASEDIR}/DeSiGNAR/include \
                $${BASEDIR}/CellularAutomaton/LibCA
 
-LIBS += -L $${BASEDIR}/DeSIGNAR/lib -lDesignar
+LIBS += -L ~/DeSiGNAR/lib -lDesignar
 
 HEADERS += \
     earthquakeautomaton.H \
