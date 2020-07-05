@@ -17,7 +17,7 @@ The main elements that this library provides are the following:
 - **Neighborhoods**: Implementation of some basic neighborhood rules that you
   can set to cellular automata independently of their dimensionality.
   This contains the elementary neighborhood for one-dimensional lattice, and
-  Moore and Von Neuman neighborhoods for higher-dimensional lattices.
+  Moore and von Neumann neighborhoods for higher-dimensional lattices.
 
 ## Requirements
 
