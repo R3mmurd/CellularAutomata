@@ -27,30 +27,19 @@ WARN = -Wall -Wextra -Wcast-align -Wno-sign-compare \
 
 FLAGS = -DDEBUG -D_GLIBCXX__PTHREADS -g -O0 -std=c++14 $(WARN)
 
-DSG = ~/DeSIGNAR
+DSG = ~/DeSiGNAR
 
 INCLUDE = -I. -I $(DSG)/include
 
-LIBS = 	-L $(DSG)/lib -lDesignar -lc -lm -lgsl -lgslcblas -lasprintf -lpthread
+LIBS = 	-L $(DSG)/lib -lDesignar
 
-all: test-slice test-clock
-
-
-test-clock: test-clock.C clock.H
-	$(CXX) $(FLAGS) $(INCLUDE) $@.C -o $@ $(LIBS)
+all: test-slice test-neighborhood
 
 test-slice: test-slice.C latticeslice.H
-	$(CXX) $(FLAGS) $(INCLUDE) $@.C -o $@ $(LIBS)
-
-test-lattice: test-lattice.C lattice.H
 	$(CXX) $(FLAGS) $(INCLUDE) $@.C -o $@ $(LIBS)
 
 test-neighborhood: test-neighborhood.C lattice.H boundarycondition.H neighborhood.H
 	$(CXX) $(FLAGS) $(INCLUDE) $@.C -o $@ $(LIBS)
 
-test-automaton: test-automaton.C automaton.H lattice.H boundarycondition.H neighborhood.H
-	$(CXX) $(FLAGS) $(INCLUDE) $@.C -o $@ $(LIBS)
-
 clean:
-	$(RM) test-slice test-lattice test-neighborhood test-automaton \
-	test-clock *~ *.o
+	$(RM) test-slice test-neighborhood *~ *.o

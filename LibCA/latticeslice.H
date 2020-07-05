@@ -33,8 +33,6 @@
 # include <algorithm>
 # include <tuple>
 
-# include <trait.H>
-
 using namespace std;
 
 template <typename T>
