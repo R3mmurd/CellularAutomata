@@ -21,6 +21,9 @@ This repository is structured as follows:
 - **[GameOfLife](GameOfLife/README.md)**: Contains the implementation of the
   [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
   model.
+  
+  - **[BriansBrain](BriansBrain/README.md)**: Contains the implementation of the
+  [Brian's Brain](https://en.wikipedia.org/wiki/Brian%27s_Brain) model.
 
 - **[Earthquake2D](Earthquake2D/README.md)**: Contains a basic simulation of
   earthquakes with cellular automata.
