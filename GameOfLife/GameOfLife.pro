@@ -7,7 +7,7 @@ CONFIG += c++14
 BASEDIR = ../..
 
 INCLUDEPATH += $${BASEDIR}/DeSiGNAR/include \
-               $${BASEDIR}/CellularAutomaton/LibCA
+               $${BASEDIR}/CellularAutomata/LibCA
 
 LIBS += -lc -lstdc++
 

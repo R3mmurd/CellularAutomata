@@ -7,7 +7,7 @@ QT += widgets core
 BASEDIR = ../..
 
 INCLUDEPATH += $${BASEDIR}/DeSiGNAR/include \
-               $${BASEDIR}/CellularAutomaton/LibCA
+               $${BASEDIR}/CellularAutomata/LibCA
 
 LIBS += -L ~/DeSiGNAR/lib -lDesignar
 

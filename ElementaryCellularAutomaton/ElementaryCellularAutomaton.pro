@@ -5,7 +5,7 @@ CONFIG += c++14
 BASE_DIR = ../..
 
 INCLUDEPATH += $${BASE_DIR}/DeSiGNAR/include \
-               $${BASE_DIR}/CellularAutomaton/LibCA
+               $${BASE_DIR}/CellularAutomata/LibCA
 
 LIBS += -L ~/DeSiGNAR/lib -lDesignar
 
