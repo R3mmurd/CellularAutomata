@@ -21,5 +21,5 @@ The main elements that this library provides are the following:
 
 ## Requirements
 
-- C++ v14 or higher.
+- C++11
 - [DeSiGNAR](https://github.com/R3mmurd/DeSiGNAR) library.
